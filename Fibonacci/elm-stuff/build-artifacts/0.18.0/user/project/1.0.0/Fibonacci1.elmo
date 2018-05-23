@@ -1,0 +1,15 @@
+var _user$project$Fibonacci1$fibonacci = function (n) {
+	var _p0 = n;
+	switch (_p0) {
+		case 0:
+			return 1;
+		case 1:
+			return 1;
+		default:
+			return _user$project$Fibonacci1$fibonacci(n - 1) + _user$project$Fibonacci1$fibonacci(n - 2);
+	}
+};
+var _user$project$Fibonacci1$main = _elm_lang$virtual_dom$Native_VirtualDom.staticProgram(
+	_elm_lang$html$Html$text(
+		_elm_lang$core$Basics$toString(
+			_user$project$Fibonacci1$fibonacci(2))));

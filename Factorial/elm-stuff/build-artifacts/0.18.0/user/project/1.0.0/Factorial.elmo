@@ -1,0 +1,7 @@
+var _user$project$Factorial$factorial = function (n) {
+	return (_elm_lang$core$Native_Utils.cmp(n, 2) < 1) ? n : (n * _user$project$Factorial$factorial(n - 1));
+};
+var _user$project$Factorial$main = _elm_lang$virtual_dom$Native_VirtualDom.staticProgram(
+	_elm_lang$html$Html$text(
+		_elm_lang$core$Basics$toString(
+			_user$project$Factorial$factorial(5))));
